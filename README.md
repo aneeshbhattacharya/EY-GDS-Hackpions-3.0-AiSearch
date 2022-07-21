@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ```
 ### Download ModelFiles:
 ```
-https://drive.google.com/drive/folders/1sChYz54xUe-jikTojA5-mSMl0OtomOph?usp=sharing
+https://drive.google.com/drive/folders/11hDtSMueVsk_njiuSESL-gI30MrpmD2Y?usp=sharing
 ```
 Please place ModelFiles inside EY-GDS-Hackpions-3.0/static/
 ### Deploy on localhost and run:
