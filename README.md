@@ -43,15 +43,15 @@ sudo apt-get install tesseract-ocr
 ```
 ### Clone and install requirements:
 ```
-git clone https://github.com/aneeshbhattacharya/EY-GDS-Hackpions-3.0.git
-cd EY-GDS-Hackpions-3.0
+git clone https://github.com/aneeshbhattacharya/EY-GDS-Hackpions-3.0-AiSearch.git
+cd EY-GDS-Hackpions-3.0-AiSearch
 pip install -r requirements.txt
 ```
 ### Download ModelFiles:
 ```
 https://drive.google.com/drive/folders/11hDtSMueVsk_njiuSESL-gI30MrpmD2Y?usp=sharing
 ```
-Please place ModelFiles inside EY-GDS-Hackpions-3.0/static/
+Please place ModelFiles inside EY-GDS-Hackpions-3.0-AiSearch/static/
 ### Deploy on localhost and run:
 ```
 python manage.py runserver
