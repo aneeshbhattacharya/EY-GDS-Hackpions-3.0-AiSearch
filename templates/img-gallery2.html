@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="{% static 'CSS/gallery-styles.css' %}">
+</head>
+<body>  
+
+  <!-- heading -->
+   <!-- STICKY HEADING PLUG IMAGE -->
+   <div class="sticky">
+    <a href="/"><img id="logo" src="{% static 'Images/EYblackBg.png' %}" alt="EY-Logo">
+    </a>
+
+<span style="color: white">Image</span> <span style="color: rgb(252, 229, 27)">G</span><span style="color: white">allery </span>
+</h1>
+</div>
+
+<center>
+    <form method="post" id="search_form" class="clearfix">
+      <input type="text" size="40" maxlength="150" name="searchText" placeholder="Search using keywords eg: coffee, espresso..."
+        id="search_text" />
+      <button type="submit" name="searchButton" value="Search" id="search_button">
+        Submit
+      </button>
+    </form>
+</center>
+
+
+<div class="img-gallery">
+
+  <form method="post">
+    {% for i in imagePaths %}
+
+    <button type="submit" name="{{i}}">
+      <img style="width: 482px;" src="{{ i }}">
+    </button>
+
+         
+    
+    {% endfor %}
+
+  </form>
+
+
+
+</div>
+

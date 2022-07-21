@@ -1,0 +1,675 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width =device-width, initial-scale=1.0" />
+  <title>AiSearch</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;500&family=Sarabun:wght@700;800&display=swap" />
+
+  <link rel="stylesheet" href="{% static 'CSS/NavBarStyle.css' %}">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class=" navbar fixed-top navbar navbar-expand-lg navbar-dark navbar-color">
+
+
+    <a class="navbar-brand" href="#home">
+
+      <img id="logo" src="{% static 'Images/EYblackBg.png' %}" alt="EY-Logo">
+
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class=" collapse navbar-collapse" id="navbarTogglerDemo02">
+
+
+
+
+      <ul class="navbar-nav ml-auto">
+
+        <li class=" nav-item">
+          <a class="nav-link" style="color: white;" href="#home">
+            Home
+          </a>
+        </li>
+
+
+        <li class=" nav-item">
+          <a class="nav-link" style="color: white;" href="#about">
+            About
+          </a>
+        </li>
+
+
+        <li class=" nav-item">
+          <a class="nav-link" style="color: white;" href="#tools">
+            Tools
+          </a>
+        </li>
+
+
+        <!-- <li class=" nav-item">
+          <a class="nav-link" style="color: white;" href="#support">
+            Support
+          </a>
+        </li> -->
+
+
+        <li class=" nav-item">
+          <a class="nav-link" style="color: white;" href="/gallery">
+            Gallery
+          </a>
+        </li>
+
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- HOME -->
+  <section id="home" name="home">
+    <div id="Banner-Heading">
+      <b>
+        <h1 id="title">A<span style="color: #ffe600">i</span>Search</h1>
+      </b>
+      <h3 id="subtitle">
+        <span style="color: white">Artificial Intelligence Powered</span><span style="color: #ffe600"> Image
+        </span><span style="color: white">Search Engine</span>
+      </h3>
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" name="about">
+    <div id="Second-section">
+      <h1 id="SecondHeading">
+        <span style="color: black">How We Simplify <span style="color: rgb(61, 59, 59)">I</span><span
+            style="color: rgb(61, 59, 59)">mage </span><span style="color: black">Search</span>
+      </h1>
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <img id="carousel-images" src="{% static 'Images/Presentation1.jpg' %}" alt="">
+            <p id="carousel-texts">
+
+              <strong>Simply</strong> feed any of the <strong>3 mentioned file formats</strong> to the website
+              <br> The uploaded images are processed using <strong>Artificial Intelligence</strong>
+              <!-- The user can upload any of the 3 mentioned file formats to the website which are then processed using HOG Feature Extraction
+
+ The uploaded images are processed in a pipeline using CNN-RNN and NLP
+
+The uploaded PDFs and Videos are processed using HOG feature extraction.
+ -->
+            </p>
+
+
+          </div>
+          <div class="carousel-item">
+
+            <img id="carousel-images" src="{% static 'Images/search and retrieval.jpg' %}" alt="">
+            <p id="carousel-texts">
+
+              Through our <strong>smart and sophisticated model</strong> user can either search by <strong>providing
+                images</strong> or by<br>
+              providing the <strong>description of that image</strong>
+              <!-- Smart search to retrieve images:
+
+The user can either search by providing the description of an image or by uploaded a similar image.
+
+Description based searches use NLP and match tags of stored images in the database and retrieve them.
+
+Image searching uses HOG feature extraction and matches features of images, PDFs and videos in the database and retrieves them.
+ -->
+            </p>
+
+
+
+          </div>
+          <div class="carousel-item">
+
+            <img id="carousel-images" src="{% static 'Images/Trainable Model.jpg' %}" alt="">
+            <p id="carousel-texts">
+              Our AI model is <strong>optimized for updation.</strong> Users can <strong>manually enter tags</strong>
+              that<br>
+              are used to <strong>re-train</strong> and <strong>improve</strong> the tagging model</strong><br>
+              <!-- Smart AI model updation:
+
+Tags entered manually by the users to modify auto-generated tags are used as input data to re-train and better the tagging model
+ -->
+            </p>
+          </div>
+        </div>
+
+        <div id="carousel-small-tab">
+
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+  <!-- TOOLS SECTION -->
+  <!-- HAVE TO ADD IMAGE STRIPES -->
+  <section id="tools" name="tools" style="background-image: url(static/Images/Tools-w2.jpg);">
+    <div id="Third-section">
+      <h1 id="ThirdHeading">
+        <span style="color: white">Too<span style="color: #ffe600">l</span><span style="color: white">s </span>
+      </h1>
+
+      <div id="btn" name="btn">
+        <style>
+          .button:hover {
+            box-shadow: 0 10px 10px 0 black, 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          }
+
+          .btn-img {
+            background-color: #94a5b8ff;
+            border: none;
+            color: white;
+            padding: 10px 3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 2px 4px;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 250px;
+          }
+
+
+          .btn-pdf {
+            background-color: #738fa7ff;
+            border: none;
+            color: white;
+            padding: 10px 3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 2px 4px;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 250px;
+          }
+
+          .btn-vid {
+            background-color: #416f8bff;
+            border: none;
+            color: white;
+            padding: 10px 3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 2px 4px;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 250px;
+          }
+
+          .btn-search {
+            background-color: rgb(49, 90, 114);
+            border: none;
+            color: white;
+            padding: 10px 3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 2px 4px;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 250px;
+
+          }
+
+          .btn-revimg {
+            background-color: #13547aff;
+            border: none;
+            color: white;
+            padding: 10px 3px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 2px 4px;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 250px;
+
+          }
+        </style>
+        <button class="button btn-img" style="vertical-align:middle"><a href="#U-img">Upload Image</a></button>
+        <button class="button btn-pdf" style="vertical-align:middle"><a href="#U-pdf">Upload PDF</a></button>
+        <button class="button btn-vid" style="vertical-align:middle"><a href="#U-vid">Upload Video</a></button>
+        <button class="button btn-search" style="vertical-align:middle"><a href="#U-search">Search</a></button>
+        <button class="button btn-revimg" style="vertical-align:middle"><a href="#U-ris">Image
+            Search</a></button>
+
+        <!-- <a class="btn-vid" href="#U-video" role="button">Upload PDF</a>
+        <a class="btn-pdf" href="#U-pdf" role="button">Upload Video</a>
+        <a class="btn-revimg" href="#U-ris" role="button">Reverse Image Search</a> -->
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="U-img" name="U-img">
+
+    <div class="form">
+      <h1 id="ThirdHeading" style="text-align: center;">
+        <span style="color: black">Image Up<span style="color: #666666">l</span><span style="color: black">oad </span>
+      </h1><br><br>
+      <center><img id="icon-imges"  src="{% static 'Images/photo.png' %}" style="width: 230px;"><br>
+        <p id="desc">Upload images with extension <span style="color: #3DB2FF">.jpg/ .png/ .jpeg</span><br>
+        We will automatically process images using <b>TensorFlow models</b>
+      and generate<br><span style="color: #3DB2FF"> most appropriate keywords using <b>NLP</b>.</span> Further,
+    the <b>User</b> can add <span style="color: #3DB2FF">additional tags</span> as they see fit. </p></center>
+      
+   
+
+          <form method="post" enctype="multipart/form-data">{% csrf_token %}
+            <center> 
+
+           <div class="file-upload-wrapper" data-text="Select your image!">
+            <!-- <input type="file" id="file-1" name="myimage"> -->
+            <input name="myimage" type="file" class="file-upload-field" value="">
+          </div>
+
+          <p>Click on<span style="color: #f4511e"> "Submit" </span>after you've chosen your file</p>
+
+          <button id="submit-btn" type="submit" class="btn btn-primary" name="image_upload">Submit</button>
+          
+        </center>
+        </form>
+
+
+        </div>
+      </div>
+
+
+  </section>
+
+  <!-- <section id="U-img" name="U-img">
+
+    <div class="form">
+      <h1 id="ThirdHeading" style="text-align: center;">
+        <span style="color: black">Image Up<span style="color: #666666">l</span><span style="color: black">oad </span>
+      </h1><br><br>
+      <h2>Preview Image Before Upload</h2>
+      <div class="grid">
+        <div class="form-element">
+
+          <form method="post" enctype="multipart/form-data">{% csrf_token %}
+
+            <input type="file" id="file-1" name="myimage">
+            <label for="file-1" id="file-1-preview">
+              <img src="{% static 'Images/picture-attachment-200.png' %}" alt="">
+              <div>
+                <span>+</span>
+              </div>
+            </label>
+            <button type="submit" class="btn btn-primary" name="image_upload">Submit</button>
+          </form>
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+    </div>
+    <script>
+      function previewBeforeUpload(id) {
+        document.querySelector("#" + id).addEventListener("change", function (e) {
+          if (e.target.files.length == 0) {
+            return;
+          }
+          let file = e.target.files[0];
+          let url = URL.createObjectURL(file);
+          document.querySelector("#" + id + "-preview div").innerText = file.name;
+          document.querySelector("#" + id + "-preview img").src = url;
+        });
+      }
+
+      previewBeforeUpload("file-1");
+    </script>
+
+  </section> -->
+
+
+  <section id="U-pdf" name="U-pdf" style="padding-top: 0;">
+    <div class="form">
+      <h1 id="ThirdHeading" style="text-align: center;">
+        <span style="color: white">Upload <span style="color: #ffe600">P</span><span style="color: white">DF </span>
+      </h1><br>
+      <center><img src="{% static 'Images/upload.png' %}" style="width: 230px;">
+        <p id="desc" style="color: rgb(255, 255, 255);">Select and Upload <span style="color: #3DB2FF">PDF files</span>
+          We will automatically extract images using<BR>
+            <b>backend Python code.</b> The <span style="color: #3DB2FF"> most appropriate SURF and Color Histogram</span> <br> features will be extracted and 
+       stored in the <b>Database</b>  </p></center>
+
+
+      <form method="post" enctype="multipart/form-data">{% csrf_token %}
+       <center>
+         <div class="file-upload-wrapper" data-text="Select your file!">
+          <input name="pdfFile" type="file">
+        </div>
+        <p style="color: white;">Click on<span style="color: #f4511e"> "Submit" </span>after you've chosen your file</p>
+        <button id="submit-btn"  type="submit" class="btn btn-primary" name="pdf_upload">Submit</button>
+        </center> 
+      </form>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+
+  </section>
+
+
+
+  <!-- <section id="U-pdf" name="U-pdf">
+    <div class="form">
+      <h1 id="ThirdHeading" style="text-align: center;">
+        <span style="color: white">Upload <span style="color: #ffe600">P</span><span style="color: white">DF </span>
+      </h1><br>
+      <center><img src="{% static 'Images/report-3-180.png' %}"></center>
+
+
+      <form method="post" enctype="multipart/form-data">{% csrf_token %}
+        <div class="file-upload-wrapper" data-text="Select your file!">
+          <input name="pdfFile" type="file">
+          
+        </div>
+        <button type="submit" class="btn btn-primary" name="pdf_upload">Submit</button>
+      </form>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+
+  </section> -->
+
+
+
+<section id="U-vid" name="U-vid" style="padding-top: 0;">
+    <div class="form">
+      <h1 id="ThirdHeading" style="text-align: center;">
+        <span style="color: black">Upload V<span style="color: #666666">i</span><span style="color: black">deo </span>
+      </h1><br>
+      <center><img src="{% static 'Images/vid-upload.png' %}" style="width: 230px;"><p id="desc" style="color: black;">Upload videos with extension <span style="color: #3DB2FF">.mp4/ .avi</span><br>
+        Every <b>Tenth frame SURF and Color Histogram feature</b> will be extracted and 
+      and will be <br><span style="color: #3DB2FF"> stored as an image </span>in the <b>Database</b><p></center>
+
+      <form method="post" enctype="multipart/form-data">{% csrf_token %}
+        <center><div class="file-upload-wrapper" data-text="Select your file!">
+          <input name="videoFile" type="file" class="file-upload-field" value="">
+        </div>
+        <p>Click on<span style="color: #f4511e"> "Submit" </span>after you've chosen your file</p>
+       <button id="submit-btn"  type="submit" class="btn btn-primary" name="video_upload">Submit</button>
+      </center>
+      </form>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="main.js"></script>
+
+  </section>
+
+
+
+
+
+  <!-- <section id="U-vid" name="U-vid">
+    <div class="form">
+      <h1 id="ThirdHeading" style="text-align: center;">
+        <span style="color: black">Upload V<span style="color: #666666">i</span><span style="color: black">deo </span>
+      </h1><br>
+      <center><img src="{% static 'Images/film-2-180 (2).png' %}"></center>
+
+      <form method="post" enctype="multipart/form-data">{% csrf_token %}
+        <div class="file-upload-wrapper" data-text="Select your file!">
+          <input name="videoFile" type="file" class="file-upload-field" value="">
+        </div>
+        <button type="submit" class="btn btn-primary" name="video_upload">Submit</button>
+      </form>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="main.js"></script>
+
+  </section> -->
+
+
+  <section id="U-search" name="U-search">
+    <div class="class-search">
+      <h1 id="ThirdHeading" style="text-align: center;">
+        <span style="color: white">Search</span>
+      </h1><br>
+      <style>
+        
+      </style>
+     <center>
+      <center><img id="icon-imges"  src="{% static 'Images/search.png' %}" style="width: 230px;"><br><br>
+        <p id="desc" style="color: rgb(255, 255, 255);">
+        We provide you the<b> extra</b> feature to either search for images by  <span style="color: #3DB2FF"><b>multiple Tags</b></span><br>such as "coffee", "cup", etc.
+        where each keyword should be separated by a comma  Or, <br>
+        Users can also search using<span style="color: #3DB2FF"><b> phrases or sentences</b></span>
+        like "man eating in a cafe",<br>
+         "people visiting taj mahal", etc.The <b>NLP</b> will process these sentences and display the most appropriate images! </p></center>
+      
+     <br></center>
+     <center> 
+       <form method="post" id="search_form" class="clearfix">{% csrf_token %}
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?" name="searchText">
+           <label>
+            <button id="search-icon"  type="submit" class="searchButton" name="searchButton" style="margin-bottom: 1rem;">
+              <i class="fa fa-search"></i>
+           </button>
+          </center> 
+
+          <center>
+
+
+
+          <p style="color: white;">&emsp;&emsp;Search by tags?   
+         
+         <input type="checkbox" name="search_tags"class="checkbox-effect " id="checkbox-effect"/>
+         </label>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+
+         <label>
+          Search by sentence?
+          <input type="checkbox" name="search_sentence" class="checkbox-effect" id="checkbox-effect"/>
+         </label>
+
+        </center>
+       </p>
+        </div>
+     </div>
+    </form>
+    </center>
+  </div>
+  </section>
+
+
+
+
+
+  <!-- <section id="U-search" name="U-search">
+    <div class="class-search">
+      <h1 id="ThirdHeading" style="text-align: center;">
+        <span style="color: white">Search</span>
+      </h1><br><br><br>
+      <style>
+        
+      </style>
+     <center> 
+       <form method="post">{% csrf_token %}
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?" name="searchText">
+
+           <label>
+            <input type="checkbox" name="search_tags"  />
+            Search by tags?
+          </label>
+
+          <label>
+            <input type="checkbox" name="search_sentence" />
+            Search by sentence?
+          </label>
+
+
+           <button type="submit" class="searchButton" name="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+    </form>
+    </center>
+  </div>
+  </section> -->
+
+
+  <section id="U-ris" name="U-ris">
+
+    <div class="form">
+      <h1 id="ThirdHeading" style="text-align: center;">
+        <span style="color: black">Reverse <span style="color: #666666">Image</span><span style="color: black"> Search </span>
+      </h1><br><br>
+      <center><img id="icon-imges"  src="{% static 'Images/RIS_IMAGE.jpeg' %}" style="width: 230px;"><br>
+        <p id="desc">Upload images with extension <span style="color: #3DB2FF">.jpg/ .png/ .jpeg</span><br>
+        <b>SURF and Color Histogram features </b>from these images will be compared with the ones in the database.
+        </center>
+      
+   
+
+          <form method="post" enctype="multipart/form-data">{% csrf_token %}
+            <center> 
+
+           <div class="file-upload-wrapper" data-text="Select your image!">
+            <!-- <input type="file" id="file-1" name="myimage"> -->
+            <input  type="file" name="myRIS" class="file-upload-field" value="">
+          </div>
+
+          <p>Click on<span style="color: #f4511e"> "Submit" </span>after you've chosen your file</p>
+
+          <button id="submit-btn" type="submit" class="btn btn-primary" name="ris_upload">Submit</button>
+          
+        </center>
+        </form>
+
+
+        </div>
+      </div>
+
+
+  </section>
+
+
+  <!-- <section id="U-ris" name="U-ris">
+    <div class="form">
+      <h1 id="ThirdHeading" style="text-align: center;">
+        <span style="color: black">Reverse <span style="color: #666666">I</span><span style="color: black">mage </span><span style="color: black">S</span><span style="color: black">earch</span>
+      </h1>
+      <h2>Preview Image Before Searching</h2>
+      <div class="grid">
+        <div class="form-element">
+
+          <form method="post" enctype="multipart/form-data">{% csrf_token %}
+          <input type="file" name="myRIS" id="file-2" accept="image/*">
+          <label for="file-2" id="file-2-preview">
+            <img src="image.png" alt="">
+            <div>
+              <span>+</span>
+            </div>
+          </label>
+          <button type="submit" class="btn btn-primary" name="ris_upload">Submit</button>
+          </form>
+
+        </div>
+
+        <script>
+          function previewBeforeUpload(id) {
+            document.querySelector("#" + id).addEventListener("change", function (e) {
+              if (e.target.files.length == 0) {
+                return;
+              }
+              let file = e.target.files[0];
+              let url = URL.createObjectURL(file);
+              document.querySelector("#" + id + "-preview div").innerText = file.name;
+              document.querySelector("#" + id + "-preview img").src = url;
+            });
+          }
+    
+          previewBeforeUpload("file-2");
+        </script>
+
+  </section> -->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>How To Make Custom File Upload Button in HTML | CSS & JavaScript</title>
+        <link rel="stylesheet" href="{% static 'CSS/keywords.css' %}">
+        
+    </head>
+
+    <body>  
+      <div class="container">
+
+      <div class="form">
+
+<div class="sticky">
+  <a href="/"><img id="logo" src="{% static 'Images/EYblackBg.png' %}" alt="EY-Logo"></a>
+          
+            
+              <span style="color: white">Keywords Extracted from the</span> <span style="color: #c1eafd">I</span><span style="color: white">mage </span>
+            </h1><br><br>
+            
+            </div>
+
+
+            
+          </div>
+
+        <center> 
+        <div class="gallery">
+          <img src="{{ path }}" alt="autumn"> 
+        </div>
+        </center>    
+
+
+
+          <form method="post" class="clearfix">{% csrf_token %}
+
+            <div class="row">
+              {% for i in tags %}
+
+              <label>
+                <input type="checkbox" name="{{ i }}" />
+                <div class="icon-box">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                  <span>{{ i }}</span>
+                </div>
+              </label>
+    
+              {% endfor %}
+            </div>
+            
+            <h2 id="ThirdHeading" style="text-align: center;">
+              <span style="color: white">Add new Keywords or</span> <span style="color: #ffe600">Submit</span>
+            </h2>
+
+            <div style="align-content: center;">
+
+
+              <input type="text" size="40" maxlength="150" name="additional_tags" placeholder="Enter Keywords here..." id="search_text" />
+             
+            </div>
+            
+            <button type="submit" name="responses" id="search_button" >
+              Submit
+            </button>
+
+
+            <!-- <div>
+              <button type="submit" class="btn btn-primary" name="responses">Submit</button>
+            </div> -->
+
+
+
+          </form>
+      </div>
+    </body>
+    </html>
+           

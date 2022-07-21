@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+     
+  }
+
+.submit-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    position: -ms-page;
+    top: 0;
+    line-height: 65px;
+    background-color: black;
+    font-family: "Sarabun", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 3rem;
+    
+  }
+    
+  #sub-logo {
+    height: 50px;
+    float: left;
+  }
+
+  .submit-container{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  div.img-disp{
+    width: 55%;
+  }
+
+  div.img-disp img{
+    margin-left: 16rem;
+    margin-top: 5rem;
+    height: 260px;
+    width: 280px;
+  }
+
+  div.words{
+    display: grid;
+    grid-gap: 5px;
+    grid-auto-flow: column;
+    padding-top: 5rem;
+    margin-right: 4rem;
+    align-items: right;
+ }
+
+
+  #box {
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 25px;
+    background: #202b38;
+    padding: 20px; 
+    font-size: 20px;
+    width: fit-content;
+    color: white;
+    height: fit-content;
+  }
+
+
+
+
+
+
+  #btn{
+    margin-top: 10rem;
+  }
+  #btn-submit {
+    background-color: green;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: "nunito", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    width: 130px;
+    height: 30px;
+}
+
+
+
+#btn-submit:hover {
+    border: none;
+    background:rgb(49, 138, 49);
+    box-shadow: 0px 0px 1px #777;
+}
+  
+
+#btn-edit {
+  background-color: red;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius:6px;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border:none;
+  width: 130px;
+  height: 30px;
+  margin-left: 3rem;
+}
+
+
+
+#btn-edit:hover {
+  border: none;
+  background:rgb(247, 67, 67);
+  box-shadow: 0px 0px 1px #777;
+}

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="{% static 'CSS/gallery-styles.css' %}">
+</head>
+<body>  
+
+
+
+  <!-- heading -->
+   <!-- STICKY HEADING PLUG IMAGE -->
+   <div class="sticky">
+    <a href="/"><img id="logo" src="{% static 'Images/EYblackBg.png' %}" alt="EY-Logo">
+
+
+<span style="color: white">Image</span> <span style="color: rgb(252, 229, 27)">G</span><span style="color: white">allery </span>
+</h1>
+</div>
+
+<!-- <center>
+    <form action="#" method="post" id="search_form" class="clearfix">
+      <input type="text" size="40" maxlength="150" name="search_text" placeholder="Search..."
+        id="search_text" />
+      <input type="submit" name="search" value="Search" id="search_button" />
+    </form>
+  </center> -->
+
+
+<div class="img-gallery">
+
+    {% for i in imagePaths %}
+
+    <img style="width: 400px;" src="{{ i }}" >
+
+    {% endfor %}
+
+</div>
+
