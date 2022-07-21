@@ -1,5 +1,5 @@
 # EY-GDS-Hackpions-3.0-AiSearch
-This is the Django project which we developed for the Ernst and Young GDS Hackpions 3.0 and won 1st place and cash prize of 1.5 Lakh INR. <br>
+This is the Django project which we developed for the Ernst and Young GDS Hackpions 3.0 and won 1st place among 2400+ developers. <br>
 **Problem Statement**: Image Search and Analysis <br>
 **Team Name**: AiSearch <br>
 **Competition Result**: https://www.hackerearth.com/challenges/hackathon/ey-gds-hackpions-30/
