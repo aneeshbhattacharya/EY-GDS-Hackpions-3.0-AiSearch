@@ -4,6 +4,9 @@ This is the Django project which we developed for the Ernst and Young GDS Hackpi
 **Team Name**: AiSearch <br>
 **Competition Result**: https://www.hackerearth.com/challenges/hackathon/ey-gds-hackpions-30/
 
+## Tech Stack
+Django, Tensorflow, Scapy, OpenCV
+
 ## Main Page
 ![1](https://user-images.githubusercontent.com/68210639/180231043-3793d05a-a13f-4802-a92b-d802cfb6593c.png)
 ## How it works?
