@@ -5,7 +5,7 @@ This is the Django project which we developed for the Ernst and Young GDS Hackpi
 **Competition Result**: https://www.hackerearth.com/challenges/hackathon/ey-gds-hackpions-30/
 
 ## Disclaimer:
-This repository may have bugs as it was made during the small time frame of a hackathon. But as per our knowledge, it is as it should.
+This repository may have bugs as it was made during the small time frame of a hackathon. But as per our knowledge, it is working as it should.
 
 ## Tech Stack
 Django, Tensorflow, Scapy, OpenCV
